@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    text-align: center;
+    background-color: #f9f9f9; /* Optional: Add background color to distinguish */
+    padding: 1rem 0;
+    width: 100%;
+    position: fixed; /* Fix the footer to the bottom */
+    bottom: 0; /* Position it at the bottom */
+    left: 0;
+}
+
+/* Optional: Adjustments for smaller screens */
+@media (max-width: 768px) {
+    footer {
+        padding: 0.5rem 0;
+    }
+}
